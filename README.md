@@ -29,7 +29,7 @@ To start it go to it's folder and run:
 python3 main.py
 ```
 There is also a desktop file which is Executable .desktop file included which can be used to run the application. The .desktop file can also be moved to ~/.config/autostart/ for auto starting the app when you log in.
-** Make sure you change the <username> in line 4 of the .desktop file with your username before running it.
+** Make sure you change the \<username\> in line 4 of the .desktop file with your username before running it.
 
 ## Contributing
 This was made as a quick alternative for a world clock. It can be improved in a lot of ways if that's worth it
