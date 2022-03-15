@@ -44,7 +44,10 @@ def get_all_times():
   for timezone in timezones:
     tz = pytz.timezone(timezone)
     time = (datetime.now(tz))
-    times.append(time.strftime("%H:%M") + "  " + timezone.split("/")[-1])
+    time_str = time.strftime("%H:%M")
+    if time.strftime("%d/%m/%Y") != datetime.now().strftime("%d/%m/%Y"):
+      time_str = time.strftime("%H:%M (%d/%m/%Y)")
+    times.append(time_str + "  " + timezone.split("/")[-1])
 
   return times
 
