@@ -1,4 +1,4 @@
-# World Clock using appindicator
+# Super Simple World Clock using appindicator
 
 ![Screen_shot1](https://github.com/hanzala123/world-clock-appindicator/blob/master/.screenshots/sc1.png)
 
