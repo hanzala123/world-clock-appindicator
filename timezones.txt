@@ -423,7 +423,7 @@
 #Etc/UTC
 #Etc/Universal
 #Etc/Zulu
-#Europe/Amsterdam
+Europe/Amsterdam
 #Europe/Andorra
 #Europe/Astrakhan
 #Europe/Athens
@@ -587,7 +587,7 @@
 #US/Mountain
 #US/Pacific
 #US/Samoa
-#UTC
+UTC
 #Universal
 #W-SU
 #WET

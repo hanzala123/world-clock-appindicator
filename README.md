@@ -1,5 +1,7 @@
 # World Clock using appindicator
 
+![Screen_shot1](https://github.com/hanzala123/world-clock-appindicator/blob/master/.screenshots/sc1.png)
+
 I recently switched to Manjaro XFCE. I choose XFCE because I loved it's snappy feeling. It however has some drawbacks. One of them was lack of a good world clock. As a freelancer it is quite handy to keep a track of the time at my client's place.
 But I do mostly backend work and have no idea about in depth gtk or other GUI framework. I already had made a simple appindicator gtk app for another project. So I used that as a base and made the rest.
 ## Installation
@@ -28,7 +30,7 @@ To start it go to it's folder and run:
 ```bash
 python3 main.py
 ```
-There is also a desktop file which is Executable .desktop file included which can be used to run the application. The .desktop file can also be moved to ~/.config/autostart/ for auto starting the app when you log in.
+There is also a desktop file which is Executable .desktop file included which can be used to automatically run the application when the user logs in. The .desktop file needs to be moved to ```~/.config/autostart/``` directory.
 ** Make sure you change the \<username\> in line 4 of the .desktop file with your username before running it.
 
 ## Contributing
