@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=World Clock
+Comment=Simple World clock using appindcator
+Exec=bash -c 'cd /home/<username>/world_clock && /usr/bin/python3 main.py'
+Icon=gnome-clocks
+Terminal=false
+Type=Application
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
