@@ -10,6 +10,7 @@ from gi.repository import AppIndicator3 as appindicator
 from gi.repository import Gtk as gtk
 from gi.repository import GLib
 from datetime import datetime
+from tabulate import tabulate
 
 last_status = None
 
@@ -47,9 +48,9 @@ def get_all_times():
     time_str = time.strftime("%H:%M")
     if time.strftime("%d/%m/%Y") != datetime.now().strftime("%d/%m/%Y"):
       time_str = time.strftime("%H:%M (%d/%m/%Y)")
-    times.append(time_str + "  " + timezone.split("/")[-1])
+    times.append([time_str, timezone.split("/")[-1]])
 
-  return times
+  return tabulate(times, tablefmt="plain").splitlines()
 
 def update_menu(indicator):
   global last_status
@@ -60,6 +61,7 @@ def update_menu(indicator):
   last_status = all_times
 
   menu = gtk.Menu()
+
   for t in all_times:
     item = gtk.MenuItem(label=t)
     menu.append(item)
