@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=World Clock
 Comment=Simple World clock using appindcator
-Exec=bash -c 'cd /home/<username>/world_clock && /usr/bin/python3 main.py'
+Exec=bash -c 'cd /home/<username>/world-clock-appindicator && /usr/bin/python3 main.py'
 Icon=gnome-clocks
 Terminal=false
 Type=Application
